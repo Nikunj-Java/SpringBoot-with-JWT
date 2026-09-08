@@ -9,7 +9,7 @@ public class SpringBoot2Application {
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(SpringBoot2Application.class);
-        //application.addInitializers(PostgresDatabaseInitializer::initialize);
+        application.addInitializers(PostgresDatabaseInitializer::initialize);
         application.run(args);
     }
 
